@@ -1,0 +1,22 @@
+{
+  "name": "worker",
+  "version": "1.0.0",
+  "description": "Background worker for CloudOps Monitoring",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/worker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Patricia-Sigei/monitoring-worker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Patricia-Sigei/monitoring-worker/issues"
+  },
+  "homepage": "https://github.com/Patricia-Sigei/monitoring-worker#readme"
+}
