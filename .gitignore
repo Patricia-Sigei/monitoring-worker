@@ -1,0 +1,11 @@
+node_modules/
+.agents
+.claude
+.devin
+.cursor
+
+.env
+/src/generated/prisma
+
+.windsurf
+

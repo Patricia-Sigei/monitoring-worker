@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/worker.js"
+    "start": "node src/worker.js",
+    "postinstall": "prisma skills sync || exit 0"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/Patricia-Sigei/monitoring-worker/issues"
   },
-  "homepage": "https://github.com/Patricia-Sigei/monitoring-worker#readme"
+  "homepage": "https://github.com/Patricia-Sigei/monitoring-worker#readme",
+  "dependencies": {
+    "@prisma/client": "^7.10.0"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.0"
+  }
 }
