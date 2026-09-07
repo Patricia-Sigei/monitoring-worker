@@ -1,0 +1,12 @@
+services:
+  worker:
+    build: .
+    container_name: cloudops-worker
+    env_file:
+      - .env
+    networks:
+      - api_default
+
+networks:
+  api_default:
+    external: true
