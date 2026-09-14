@@ -16,6 +16,8 @@ const incidentCount = await prisma.incident.count();
 
 console.log(`There are ${incidentCount} incidents in the database`);
 
-setInterval(() => {
-  console.log("Worker is running...");
+setInterval(async () => {
+  const incidentCount = await prisma.incident.count();
+
+  console.log(`Worker checked the database: ${incidentCount} incidents found`);
 }, 5000);
